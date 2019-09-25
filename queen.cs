@@ -26,14 +26,17 @@ namespace Chess
     {
       bool canAttack = false;
 
-
-
-
+      if (x == _row || y == _col)
+      {
+        canAttack = true;
+      }
+      else if (Math.Abs((x - _row)/(y - _col)) == 1)
+      {
+        canAttack = true;
+      }
       return canAttack;
     }
 
-
   }
-
   
 }
