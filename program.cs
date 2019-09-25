@@ -14,6 +14,20 @@ class Program
     Console.WriteLine("Enter the current column for the pawn:");
     int pawnCol = int.Parse(Console.ReadLine());
 
+    // //Jacqueline's abandoned attempt at drying up the code above//
+    // int queenRow = 0;
+    // int queenCol = 0;
+    // int pawnRow = 0;
+    // int pawnCol = 0;
+    // int[] coordinates = { queenRow, queenCol, pawnRow, pawnCol };
+    // Dictionary<string, int> chessCoords = new Dictionary<string, int>() { {"queenRow", 0}, {"queenCol", 0}, {"pawnRow", 0}, {"pawnCol", 0}};
+    // string[,] chessSetup = new string[,] { {"queen", "row"}, {"queen", "column"}, {"pawn", "row"}, {"pawn", "column"}};
+    // for (int i = 0; i < 4; i++)
+    // {
+    //   Console.WriteLine("Enter the current " + chessSetup[i, 0] + " " + chessSetup[i, 1]);
+    //   chessCoords = int.Parse(Console.ReadLine());
+    // }
+
     if (queenRow == pawnRow && queenCol == pawnCol)
     {
       Console.WriteLine("The queen and the pawn cannot be on the same space, try again.");
